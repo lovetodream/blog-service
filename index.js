@@ -44,7 +44,7 @@ fastify.post('/subscribe', async (request, reply) => {
 
 const start = async () => {
     try {
-        await fastify.listen(4000);
+        await fastify.listen(4000, '0.0.0.0');
         fastify.log.info(`server listening on ${fastify.server.address().port}`);
     } catch (err) {
         fastify.log.error(err);
