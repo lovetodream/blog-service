@@ -1,0 +1,15 @@
+{
+  "name": "blog-service",
+  "version": "1.0.0",
+  "description": "A small backend service for swiftbytimo.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "GHOST_URL=https://cms-swiftbytimo.nxtaws.com GHOST_ADMIN_KEY=629ba8cf6440ae0001667a50:6bad0fd863ea0e551031a9d9a48411d39a0cf51db1431b78366c1a3e524f385f node index.js"
+  },
+  "author": "lovetodream",
+  "license": "MIT",
+  "dependencies": {
+    "@tryghost/admin-api": "^1.13.0",
+    "fastify": "^3.29.0"
+  }
+}
